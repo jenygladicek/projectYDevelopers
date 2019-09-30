@@ -1,0 +1,80 @@
+
+.container1{
+	width: 38%;
+    margin: 10% auto;
+}
+.container1 .pro-img{
+	justify-content: normal;
+}
+.container1 .pro-info input{
+	height: 36px;
+}
+.button .btn{
+	background-color: #008bc1;
+    color: #fff;
+}
+.newAcc p span{
+	color: #008bc1;
+	cursor: pointer;
+}
+.brand_logo_container {
+			position: absolute;
+			height: 150px;
+			width: 150px;
+			top: 38px;
+			left:580px;
+			border-radius: 50%;
+			background: #008bc1;
+			padding: 10px;
+			text-align: center;
+			z-index: 100;
+		}
+		.brand_logo {
+			height: 130px;
+			width: 130px;
+			border-radius: 50%;
+			border: 2px solid white;
+		}
+		.newAcc{
+			padding: 10px 0;
+		}
+		.pro-info.alert{
+			padding: 0px 10px;
+	    color: red;
+	 }
+@media (max-width: 600px){
+	.container1{
+		width: 100%;
+	  margin: 10% auto;
+	}
+	.margin-t-20 {
+    margin-top: 25%;
+ }
+ .pro-info{
+	     margin: 10% 0;
+ }
+
+}
+@media (max-width: 900px){
+	.brand_logo_container {
+		left:185px;
+		top:0px;
+		height: 106px;
+		width: 106px;
+		padding: 8px;
+	}
+	.brand_logo{
+		height: 90px;
+		width: 90px;
+	}
+	.container1{
+		width: 80%;
+	  margin: 10% auto;
+	}
+	.margin-t-20 {
+    margin-top: 25%;
+ }
+ .pro-info{
+	     margin: 10% 0;
+ }
+}

@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="small_business_45/theme1/stylesheets/flexslider.css" media="all" rel="stylesheet" type="text/css">
+  <link href="what.css" media="all" rel="stylesheet" type="text/css">
+  <link href="signIn.css" media="all" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <script>
+  function loginLevel1() {
+   document.getElementById("level1").style.display = "none";;
+   document.getElementById("level2").classList.remove("hide");
+  }
+  function goToSignupPage(){
+    document.getElementById("signIn").style.display = "none";;
+    document.getElementById("signUp").classList.remove("hide");
+  }
+  </script>
+ </head>
+<body>
+    <div class="main-forum">
+      <div class="main-body col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+        <div class="container1 no-pad" >
+          <div class="brand_logo_container">
+						<img src="Logo.png" class="brand_logo" alt="Logo">
+					</div>
+          <div class="box" id="signIn">
+          <div class="header common-header col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+            <div class="pro-img col-md-1 col-lg-1 col-xs-2 col-sm-2 no-pad">
+              <span class="back-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNavv()">
+              <h3>SignIn</h3>
+              </a>
+            </div>
+          </div>
+          <div class="margin-t-20" id="level1">
+            <div class="pro-info alert alert-error col-md-24 hide" id="usernameError">Enter a valid email address or phone number.
+            </div>
+            <div class="pro-info">
+              <input type="text" name="" placeholder="Email/Phone">
+            </div>
+            <div class="pro-info">
+              <input name="" type="password" placeholder="Password">
+            </div>
+            <div class="pro-info">
+              <p>Forget your Password?</p>
+            </div>
+            <div class="pro-info hide">
+              <input name="" type="text" placeholder="Type your Email id here">
+            </div>
+            <div class="button">
+              <button onclick="loginLevel1()" type="button" name="button" class="btn login_nxt">Next</button>
+            </div>
+          </div>
+          <div class="margin-t-20 hide" id="level2">
+            <div class="pro-info">
+              <input type="text" name="" placeholder="OTP">
+            </div>
+            <div class="button">
+              <button onclick="login()" type="button" name="button" class="btn login_btn">Login</button>
+            </div>
+          </div>
+          <div class="newAcc">
+            <p>No account? <span onclick="goToSignupPage()">Create one!</span></p>
+          </div>
+          </div>
+
+          <!-- Create account -->
+          <div class="box hide" id="signUp">
+            <div class="header common-header col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+              <div class="pro-img col-md-1 col-lg-8 col-xs-2 col-sm-2 no-pad">
+                <span class="back-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavv()">
+                <h3>Create account</h3>
+                </a>
+              </div>
+            </div>
+            <div class="margin-t-20" id="">
+              <div class="pro-info">
+                <input type="number" name="" placeholder="Phone">
+              </div>
+              <div class="pro-info">
+                <input type="text" name="" placeholder="Email">
+              </div>
+              <div class="pro-info">
+                <input name="" type="password" placeholder="Password">
+              </div>
+              <div class="pro-info">
+                <input name="" type="password" placeholder="Confirm Password">
+              </div>
+              <div class="button">
+                <button onclick="createAccount()" type="button" name="button" class="btn login_nxt">Sign Up</button>
+              </div>
+            </div>
+            <!-- <div class="newAcc">
+              <p>No account, <span onclick="loginLevel1()">Create one!</span></p>
+            </div> -->
+        </div>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>

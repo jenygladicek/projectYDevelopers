@@ -106,7 +106,7 @@ justify-content: space-around;
     justify-content: flex-end;}
 .msg ul{display: flex;justify-content: right;align-items: center;width: 100%;padding-right: 5%;margin: 0;}
 .msg ul li{font-size: 20px;margin-left: 4%;}
-.msg{height: 40px; width:22%;float: right;}
+.msg{height: 40px; width:28%;float: right;}
 /* .left-msg span{background-image: url('white.png')} */
 
 .dropbtn {
@@ -400,4 +400,14 @@ height: 200px;}
   color:#fff;
   font-size: 15px;
   font-weight: bold;
+}
+/* Common css*/
+.margin-t-10{
+  margin-top: 10%;
+}
+.margin-t-20{
+  margin-top: 20%;
+}
+.margin-t-30{
+  margin-top: 30%;
 }
