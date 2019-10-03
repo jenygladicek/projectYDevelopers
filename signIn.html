@@ -86,7 +86,7 @@
                 </a>
               </div>
             </div>
-            <div class="margin-t-20" id="">
+            <div class="margin-t-20" id="phoneWithDetails">
               <div class="pro-info">
                 <input type="number" name="" placeholder="Phone">
               </div>
@@ -99,9 +99,28 @@
               <div class="pro-info">
                 <input name="" type="password" placeholder="Confirm Password">
               </div>
-              <div class="button">
+              <div class="align-left custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input" id="customCheck1">
+               <label class="custom-control-label" for="customCheck1">Terms and Conditions</label>
+              </div>
+              <div class="align-left button">
                 <button onclick="createAccount()" type="button" name="button" class="btn login_nxt">Sign Up</button>
               </div>
+            </div>
+            <div class="margin-t-20" id="verifyPhone">
+              <div class="pro-info">
+                <input type="number" name="" placeholder="Enter your Phone number">
+              </div>
+              <div class="custom-select margin-b-10">
+                <select class="form-control">
+                  <option selected>Create Profile</option>
+                  <option value="1">Work</option>
+                  <option value="2">Personal</option>
+                </select>
+             </div>
+             <div class="button">
+               <button onclick="createAccount()" type="button" name="button" class="btn login_nxt">Verify Phone</button>
+             </div>
             </div>
             <!-- <div class="newAcc">
               <p>No account, <span onclick="loginLevel1()">Create one!</span></p>

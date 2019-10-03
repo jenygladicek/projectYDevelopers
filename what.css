@@ -401,6 +401,10 @@ height: 200px;}
   font-size: 15px;
   font-weight: bold;
 }
+.align-left{
+  padding: 0% 10px;
+  margin: 5% 0;
+}
 /* Common css*/
 .margin-t-10{
   margin-top: 10%;
@@ -410,4 +414,16 @@ height: 200px;}
 }
 .margin-t-30{
   margin-top: 30%;
+}
+.margin-b-10{
+  margin-bottom: 10%;
+}
+.margin-b-20{
+  margin-bottom: 20%;
+}
+.margin-b-30{
+  margin-bottom: 30%;
+}
+.justify-left{
+  justify-content: left;
 }
