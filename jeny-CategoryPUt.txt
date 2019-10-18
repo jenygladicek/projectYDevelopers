@@ -1,0 +1,39 @@
+        let myArr = [];
+        let {selectedItems,selectedSubItems,fullData} = this.state;
+        console.log(selectedItems,selectedSubItems,fullData);
+        for(var i=0;i<selectedItems.length;i++){
+            for(var j=0;j<fullData.length;j++){
+                if(selectedItems[i].value == fullData[j].name){
+                    myArr.push(fullData[j]);
+                }
+                if(i == selectedItems.length-1 && j== fullData.length-1){
+                    console.log(myArr,"saving item%%%%%%%%%%%%%%");
+                }
+            }
+        }
+        for(var a=0;a<selectedSubItems.length;a++){
+            for(var b=0;b<myArr.length;b++){
+                let sub = myArr[b].sub_categories;
+                for(var c=0;c<sub.length;c++){
+                    if(selectedSubItems[a].value != sub[c].name){
+                        sub.splice(c,1);
+                    }
+                    else{
+                        if(sub[c].options){
+                            delete sub[c].options;
+                        }
+                    }
+                }
+            }
+        } 
+        console.log(myArr,"saving item%%%%%%%%%%%%%%");
+        let userData = {"user" : {"category_fields" : [{"categories" :myArr}]}};
+        console.log(userData.user.category_fields[0].categories,`https://arcane-brook-64532.herokuapp.com/api/v1/users/`+this.props.navigation.state.params.userId+`.json?access_token=`+this.props.navigation.state.params.token,"Api data for PUT");
+        axios.put(`https://arcane-brook-64532.herokuapp.com/api/v1/users/`+this.props.navigation.state.params.userId+`.json?access_token=`+this.props.navigation.state.params.token,userData)
+        .then(res => {
+          const response = res.data;
+          console.log(response);
+          })
+          .catch(err =>{
+            console.log(err,"Error in Category PUT api");
+          })
